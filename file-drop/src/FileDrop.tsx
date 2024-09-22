@@ -36,18 +36,7 @@ export class FileDrop extends React.PureComponent<FileDropProps, FileDropState> 
       window.navigator.appVersion.indexOf('Trident/') > 0);
 
   static eventHasFiles = (event: DragEvent | ReactDragEvent<HTMLElement>) => {
-    // In most browsers this is an array, but in IE11 it's an Object :(
-    let hasFiles = false;
-    if (event.dataTransfer) {
-      const types = event.dataTransfer.types;
-      for (const keyOrIndex in types) {
-        if (types[keyOrIndex] === 'Files') {
-          hasFiles = true;
-          break;
-        }
-      }
-    }
-    return hasFiles;
+    return true;
   };
 
   static propTypes = {
