@@ -1,12 +1,12 @@
 {
-  "name": "react-file-drop",
-  "author": "https://sarink.net",
-  "version": "3.1.6",
-  "description": "Zero dependency React component for Gmail or Facebook -like drag and drop file uploader. Drag files anywhere onto the window (or user defined 'frame' prop)! Very extensible, provides many hooks so you can use it to develop any custom behavior that you desire.",
+  "name": "react-content-drop",
+  "author": "adrian-fernandez",
+  "version": "1.0.0",
+  "description": "React content drop forked from react-file-drop",
   "main": "FileDrop.js",
   "types": "FileDrop.d.ts",
   "scripts": {
-    "build": "rm -rf dist && mkdir dist && cp -v ../*.md ./package*.json ./src/index.js ./dist/ && tsc --project .",
+    "build": "rm -rf dist && mkdir dist && cp -v ./package*.json ./src/index.js ./dist/ && tsc --project .",
     "format": "prettier --check '**/*.{js,jsx,ts,tsx,json,htm,html}'",
     "format:fix": "prettier --write '**/*.{js,jsx,ts,tsx,json,htm,html}'",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
@@ -37,13 +37,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sarink/react-file-drop.git"
+    "url": "git+https://github.com/adrian-fernandez/react-content-drop.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sarink/react-file-drop/issues"
+    "url": "https://github.com/adrian-fernandez/react-content-drop/issues"
   },
-  "homepage": "https://github.com/sarink/react-file-drop#readme",
+  "homepage": "https://github.com/adrian-fernandez/react-content-drop#readme",
   "dependencies": {
     "prop-types": "^15.7.2"
   },
